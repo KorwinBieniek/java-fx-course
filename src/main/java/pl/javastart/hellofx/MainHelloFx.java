@@ -1,18 +1,25 @@
 package pl.javastart.hellofx;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class MainHelloFx extends Application {
+import java.io.IOException;
 
+public class MainHelloFx extends Application {
     public MainHelloFx() {
         System.out.println("Constructor");
     }
 
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) throws IOException {
+        AnchorPane anchorPane = FXMLLoader.load(getClass().getResource("/helloView.fxml"));
+        Scene scene = new Scene(anchorPane);
+        stage.setScene(scene);
         System.out.println("Start");
-        stage.setTitle("Hello V2.0");
+        stage.setTitle("Hello FX!");
         stage.show();
     }
 
@@ -22,12 +29,12 @@ public class MainHelloFx extends Application {
     }
 
     @Override
-    public void init() throws Exception {
+    public void init() {
         System.out.println("Init");
     }
 
     @Override
-    public void stop() throws Exception {
+    public void stop() {
         System.out.println("Stop");
     }
 }
