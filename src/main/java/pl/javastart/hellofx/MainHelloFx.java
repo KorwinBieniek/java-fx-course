@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,8 +16,8 @@ public class MainHelloFx extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        AnchorPane anchorPane = FXMLLoader.load(getClass().getResource("/helloView.fxml"));
-        Scene scene = new Scene(anchorPane);
+        BorderPane borderPane = FXMLLoader.load(getClass().getResource("/helloView.fxml"));
+        Scene scene = new Scene(borderPane);
         stage.setScene(scene);
         System.out.println("Start");
         stage.setTitle("Hello FX!");
