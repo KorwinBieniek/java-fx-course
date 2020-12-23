@@ -15,16 +15,16 @@ public class HelloFxController {
     @FXML
     private HBox secondPaneHBox;
 
-    @FXML
+    /*@FXML
     private TextArea LeftTextArea;
 
     @FXML
     private TextArea RightTextArea;
-
+*/
     @FXML
     private Button clearWindowsButton;
 
-    public void initialize() {
+    /*public void initialize() {
         LeftTextArea.addEventFilter(KeyEvent.KEY_RELEASED, x -> RightTextArea.setText(new StringBuilder(LeftTextArea.getText())
                 .reverse().toString()));
         //RightTextArea.addEventFilter(KeyEvent.KEY_RELEASED, x -> LeftTextArea.setText(new StringBuilder(LeftTextArea.getText())
@@ -34,7 +34,7 @@ public class HelloFxController {
             LeftTextArea.clear();
             RightTextArea.clear();
         });
-    }
+    }*/
 
 }
 

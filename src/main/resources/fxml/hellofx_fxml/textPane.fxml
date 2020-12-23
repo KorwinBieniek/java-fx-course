@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.javastart.hellofx.controller.HelloFxController">
+    <HBox fx:id="secondPaneHBox" prefHeight="200.0" prefWidth="600.0">
+
+    <TextArea fx:id="LeftTextArea" prefHeight="200.0" prefWidth="300.0" />
+    <TextArea fx:id="RightTextArea" disable="true" layoutX="300.0" prefHeight="200.0" prefWidth="300.0" />
+    </HBox>
+</AnchorPane>
