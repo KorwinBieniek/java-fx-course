@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.javastart.hellofx.controller.HelloFxController">
-    <HBox fx:id="secondPaneHBox" prefHeight="200.0" prefWidth="600.0">
-
-    <TextArea fx:id="LeftTextArea" prefHeight="200.0" prefWidth="300.0" />
-    <TextArea fx:id="RightTextArea" disable="true" layoutX="300.0" prefHeight="200.0" prefWidth="300.0" />
-    </HBox>
-</AnchorPane>
+<HBox VBox.vgrow="ALWAYS" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1"
+      fx:controller="pl.javastart.hellofx.controller.textPaneController">
+    <children>
+        <TextArea fx:id="inputTextArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                  prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+        <TextArea fx:id="outputTextArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                  prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+    </children>
+</HBox>

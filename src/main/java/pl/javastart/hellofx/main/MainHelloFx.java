@@ -12,7 +12,7 @@ public class MainHelloFx extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/hellofx_fxml/helloView.fxml"));
+        VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/hellofx_fxml/contentPane.fxml"));
         Scene scene = new Scene(mainPane);
         stage.setScene(scene);
         stage.setTitle("Inicjalizator");
