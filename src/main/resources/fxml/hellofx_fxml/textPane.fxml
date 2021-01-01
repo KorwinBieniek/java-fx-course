@@ -4,12 +4,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<HBox VBox.vgrow="ALWAYS" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1"
-      fx:controller="pl.javastart.hellofx.controller.textPaneController">
+<HBox VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.javastart.hellofx.controller.textPaneController">
     <children>
-        <TextArea fx:id="inputTextArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-                  prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
-        <TextArea fx:id="outputTextArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-                  prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+        <TextArea fx:id="inputTextArea" prefHeight="300.0" prefWidth="500.0"/>
     </children>
 </HBox>

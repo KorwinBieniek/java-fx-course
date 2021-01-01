@@ -13,11 +13,9 @@ public class contentPaneController {
 
     public void initialize() {
         var inputTextArea = textPaneController.getInputTextArea();
-        var outputTextArea = textPaneController.getOutputTextArea();
 
         clearButton.setOnAction(event -> {
             inputTextArea.clear();
-            outputTextArea.clear();
         });
     }
 }
