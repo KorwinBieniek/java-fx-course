@@ -1,6 +1,7 @@
 module mp3player {
     requires javafx.graphics;
     requires javafx.controls;
+    requires javafx.media;
     requires javafx.fxml;
     requires jid3lib;
 
